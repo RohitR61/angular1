@@ -1,0 +1,18 @@
+<div class="content">
+    <h1>Enter & <br><span>Enjoy Food</span> <br>In Food Hub</h1>
+    <p class="par">Consumers continue to enjoy high-protein foods for snacks and meals,<br>
+         but are looking for better-for-you options without artificial ingredients.<br>
+    </p>
+    <button class="cn"><a href="#">Join us</a></button>
+    <form class="form" [formGroup]="loginform">
+        <h2>Login Here</h2>
+        <input type="email" name="email" placeholder="Enter Email Here" formControlName="email">
+        <input type="password" placeholder="Enter Password" formControlName="password">
+        <div class="forget-pass"><a href="#">Forgot password</a></div>
+        <br>
+        <button type="button" class="btn btn-success" (click)="login()">Login</button> &nbsp;<br>
+        <p>Don't have an account <span class="signbtn" style="font-size: 20px;color:red; cursor: pointer;" routerLink="/signup">Sign Up</span></p>
+
+       
+        </form>
+</div>

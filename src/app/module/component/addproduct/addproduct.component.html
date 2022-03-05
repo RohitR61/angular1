@@ -1,0 +1,38 @@
+<div class="head">
+    <img src="/assets/pizza/pizza2.jpg" height="400px" width="400px" class="image" alt="">
+    <form class="main col-sm-4" [formGroup]="adddata">
+        <div>
+            <h1 class="heading">Add Products</h1>
+        </div>
+        <div class="form-group">
+          <label class="label">Enter id</label>
+          <input type="text" class="form-control" placeholder="Enter id" formControlName="id">
+        </div>
+        <div class="form-group">
+            <label class="label">Image Url</label>
+            <input type="text" class="form-control" placeholder="Enter Image" formControlName="image">
+        </div>
+        <div class="form-group">
+            <label class="label">Enter Your Name </label>
+            <input type="text" class="form-control" placeholder="Enter name" formControlName="name">
+        </div>
+        <div class="form-group">
+            <label class="label">Brand</label>
+            <input type="text" class="form-control" placeholder="Enter Brand" formControlName="brand">
+        </div>
+        <div class="form-group">
+            <label class="label">Category</label>
+            <input type="text" class="form-control" placeholder="Enter price" formControlName="categories">
+        </div>
+        <div class="form-group">
+            <label class="label">Price</label>
+            <input type="text" class="form-control" placeholder="Enter Drink name" formControlName="price">
+        </div>
+        <div class="form-group">
+            <label class="label">Description</label>
+            <input type="text" class="form-control" placeholder="Enter description" formControlName="description">
+        </div>
+        <button type="submit" class="btn btn-primary submit" (click)="submit()" routerLink="../menu">Submit</button>
+      </form>
+</div>
+

@@ -1,0 +1,26 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+
+        <th scope="col">FirstName</th>
+        <th scope="col">LastName</th>
+        <th scope="col">Email</th>
+        <th scope="col">Status</th>
+        <th scope="col">Button</th>
+
+      </tr>
+    </thead>
+      <tbody>
+        <tr *ngFor="let x of data;index as i">
+          <td>{{x._id}}</td>
+          <td>{{x.firstName}}</td>
+          <td>{{x.lastName}}</td>  
+          <td>{{x.email}}</td>
+          <td>{{x.status}}</td>
+          <td><i class="fa fa-pen-to-square button" routerLink="/update/{{x._id}}/{{i}}"></i></td>
+            <td><i class="fa-solid fa-trash button" (click)="deleteuser(x._id)"></i></td>
+        </tr>
+      </tbody>
+</table>
+

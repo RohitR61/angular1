@@ -1,0 +1,17 @@
+.table{
+    margin-top: 46px;
+    width: 86%;
+    border: 1px;
+    background-color:bisque;
+    margin-left: 80px;
+}
+tr{
+    border: 1px solid ;
+}
+td{
+    border: 1px solid;
+}
+.button{
+    width:50px;
+    padding: 20px;
+}

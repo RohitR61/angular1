@@ -1,0 +1,31 @@
+<div class="head">
+    <img src="/assets/coffee/c4.jpg" height="400px" width="400px" class="image" alt="">
+<form class="main col-sm-4" [formGroup]="editdata">
+    <div class="form-group">
+        <label>Enter Image</label>
+        <input type="text" class="form-control" placeholder="Enter Image" formControlName="image">
+    </div>
+    <div class="form-group">
+        <label>Enter Name </label>
+        <input type="text" class="form-control" placeholder="Enter name" formControlName="name">
+    </div>
+    <div class="form-group">
+        <label>Brand</label>
+        <input type="text" class="form-control" placeholder="Enter Brand" formControlName="brand">
+    </div>
+    <div class="form-group">
+        <label>Price</label>
+        <input type="text" class="form-control" placeholder="Enter price" formControlName="price">
+    </div>
+    <div class="form-group">
+        <label>Category</label>
+        <input type="text" class="form-control" placeholder="Enter Category" formControlName="categories">
+    </div>
+    <div class="form-group">
+        <label>Description</label>
+        <input type="text" class="form-control" placeholder="Enter description" formControlName="description">
+    </div>
+    <button type="submit" class="btn btn-primary submit" (click)="updatedata()" routerLink="../menu">Submit</button>
+
+  </form>
+  </div>>

@@ -1,0 +1,51 @@
+
+<div class="dashboard" *ngIf="adminheader">
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo" routerLink="/landing">FOOD </h2><br>
+                <h2 class="logo">HUB</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a routerLink="/burger">Burger</a></li>
+                    <li><a routerLink="/pizza">Pizza</a></li>
+                    <li><a routerLink="/meals">Meals</a></li>
+                    <li><a routerLink="/coffee">Coffee</a></li>
+                </ul>
+            </div>
+            <div >
+                <div class="button">
+                <button class="btn btn-primary button" routerLink="/login" *ngIf="loggedin">Login</button>
+                <button class="btn btn-primary button" *ngIf="logoutuser" (click)="logout()">Logout</button>
+            </div>
+
+            </div>
+         </div>
+                </div>
+
+            </div>
+
+
+<!-- admin ka header -->
+<div class="dashboard" *ngIf="!adminheader">
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo" routerLink="/landing">FOOD </h2><br>
+                <h2 class="logo">HUB</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a routerLink="admin/menu">Menu</a></li>
+                    <li><a routerLink="/admin/addproduct">Add Product</a></li>
+    
+                    
+                </ul>
+            </div>
+            <div class="search">
+                <a><button class="btn" (click)="logout()">Logout</button></a>
+            </div>
+        </div>
+    </div>
+</div>
